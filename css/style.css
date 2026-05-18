@@ -1,0 +1,364 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-dark: rgb(140, 140, 140);
+    --bg-light: rgb(235, 235, 235);
+    --bg-popup: rgb(250, 250, 250);
+    --font-color: rgb(70, 70, 70);
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+header a{
+    font-size: 20px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    padding: 20px 25px;
+    position: fixed;
+    z-index: 99;
+}
+footer{
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    padding: 2px 0 4px;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+main{
+    background: var(--bg-dark);
+}
+.bgSticky{
+    position: sticky;
+    top: 0;
+}
+.sec1{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+.mvWrap{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    overflow: hidden;
+    cursor: default;
+}
+.mvWrap p{
+    color: rgb(137, 137, 137);
+    font-size: 6vh;
+    white-space: nowrap;
+    font-family: "Saira Stencil", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+.mvCon2{
+    position: relative;
+    left: -14%;
+}
+.scrollText{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 50%;
+    background: none;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    cursor: default;
+}
+.scrollText p{
+    background: none;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.scrollText i{
+    margin-top: 50px;
+    animation: down 2.5s infinite;
+}
+@keyframes down {
+    35% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 30px);
+    }
+    70% {
+        transform: translate(0px, 0px);
+    }
+}
+.sec2Animation1{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-dark);
+}
+.sec2BgText{
+    height: 0;
+    color: rgb(166, 166, 166);
+    font-size: 20vh;
+    z-index: 3;
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: default;
+}
+.sec2Animation2{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-light);
+    z-index: 2;
+}
+.sec2{
+    width: 100%;
+    background: none;
+    z-index: 3;
+    padding-bottom: 170px;
+    overflow: hidden;
+}
+.sec2 ul{
+    width: 100%;
+    display: grid;
+    background: none;
+    list-style: none;
+    gap: 90px;
+}
+.sec2Con{
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    transition-duration: .4s;
+    cursor: pointer;
+}
+.sec2Con:hover{
+    transform: scale(0.98);
+}
+.pulseHorizon{
+    height: 40vh;
+    background: url(../img/pulse_horizon_2025.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.chikatetuHakubutukan{
+    height: 40vh;
+    background: url(../img/chikatetu_hakubutukan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.chiharadai{
+    height: 55vh;
+    background: url(../img/chiharadai.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.yoshidaShikaiin{
+    height: 50vh;
+    background: url(../img/yoshida_shikaiin.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.wetWipes{
+    height: 45vh;
+    background: url(../img/non-alcoholic_wet_wipes.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.toDoList{
+    height: 55vh;
+    background: url(../img/todolist.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.active{
+    display: none;
+}
+.popup{
+    background: var(--bg-popup);
+    width: 80%;
+    height: 90vh;
+    position: fixed;
+    top: 0;
+    left: 10%;
+    z-index: 999;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 50px 50px 0 0;
+}
+.popupWrap{
+    width: 100%;
+    height: calc(100% - 40px);
+    text-align: center;
+    padding: 40px 0 0;
+}
+.popupCon{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.popupCon h2{
+    font-size: 27px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--font-color);
+}
+.popupCon img{
+    width: 70%;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+.popupCon-data{
+    width: 67%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1.1fr 1fr;
+    text-align: left;
+    gap: 33px;
+}
+.createNote{
+    font-size: 16px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--font-color);
+}
+.openItem{
+    cursor: pointer;
+}
+.openItem a{
+    color: var(--font-color);
+    font-size: 22px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.openItem a span{
+    font-size: 36px;
+}
+.openItem:hover .folderNone{
+    display: none;
+}
+.folderHover{
+    display: none;
+}
+.openItem:hover .folderHover{
+    display: inline-block;
+}
+.popupIn{
+    animation-name: popupIn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes popupIn {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(10vh);
+    }
+}
+.popupCls{
+    display: block;
+    position: fixed;
+    left: 100px;
+    width: 43px;
+    height: 43px;
+    border: 2px solid var(--font-color);
+    border-radius: 50%;
+    background: var(--font-color);
+    transform: translateX(-50px);
+    cursor: pointer;
+    z-index: 999;
+}
+.popupCls:hover{
+    background: red;
+    border: 2px solid red;
+}
+.popupCls::before, .popupCls::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 23px;
+    background: #fff;
+}
+.popupCls::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.popupCls::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.jBox-title{
+    font-family: sans-serif;
+}
+.jBox-content{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.jBox-content a{
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: gray;
+}
+.jBox-content a:hover{
+    color: red;
+}
+.jBox-content i{
+    font-size: 38px;
+}
+
+@media screen and (max-width: 1024px){
+    .popupCon-data{
+        grid-template-columns: 1fr;
+    }
+    .sec2BgText{
+        font-size: 13vh;
+    }
+    .sec2 ul{
+        gap: 70px;
+    }
+    .sec2Con{
+        width: 80%;
+        border-radius: 30px;
+    }
+    .popup{
+        width: 90%;
+        left: 5%;
+        border-radius: 30px 30px 0 0;
+    }
+    .popupCon h2{
+        margin-top: 30px;
+    }
+    .popupCon img{
+        width: 90%;
+        margin: 15px 0;
+    }
+    .popupCls{
+        top: 10px;
+        left: 65px;
+    }
+}

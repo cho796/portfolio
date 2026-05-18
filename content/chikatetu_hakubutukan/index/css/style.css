@@ -1,0 +1,708 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 140px;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+header img{
+    width: 360px;
+}
+header nav ul{
+    display: flex;
+    padding-left: 0;
+    margin-left: 50px;
+    gap: 40px;
+}
+header nav li{
+    list-style: none;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 27px;
+}
+header nav a:hover{
+    text-decoration: underline #1B457A 5px;
+    color: #1B457A;
+}
+.topMain{
+    height: 960px;
+}
+#mvDom{
+    width: 100%;
+    height: 960px;
+    flex-shrink: 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    width: 100%;
+    height: 340px;
+    flex-shrink: 0;
+    background: #E6E6E6;
+}
+.footerLineColor{
+    display: flex;
+    justify-content: center;
+}
+.hibiya{
+    width: 20%;
+    height: 50px;
+    flex-shrink: 0;
+    background: #A99B90;
+}
+.ginza{
+    width: 10%;
+    height: 50px;
+    flex-shrink: 0;
+    background: #FAA528;
+}
+.marunouchi{
+    width: 10%;
+    height: 50px;
+    flex-shrink: 0;
+    background: #E00F1A;
+}
+.tozai{
+    width: 10%;
+    height: 50px;
+    flex-shrink: 0;
+    background: #00ADEF;
+}
+.nanboku{
+    width: 10%;
+    height: 50px;
+    flex-shrink: 0;
+    background: #00968B;
+}
+.yurakucho{
+    width: 10%;
+    height: 50px;
+    flex-shrink: 0;
+    background: #CD910F;
+    transition: 1.8s;
+}
+.yurakucho:hover{
+    background-color: #95461F;
+}
+.chiyoda{
+    width: 10%;
+    height: 50px;
+    flex-shrink: 0;
+    background: #05904C;
+}
+.hanzomon{
+    width: 20%;
+    height: 50px;
+    flex-shrink: 0;
+    background: #8C7DB8;
+}
+.footerText{
+    text-align: center;
+    position: relative;
+}
+.snsLink{
+    margin-left: 71%;
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    z-index: 999;
+}
+.snsLinkSp{
+    display: none;
+}
+.footerText img{
+    margin-top: 18px;
+}
+.footerText p{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 17px;
+}
+.subway4S{
+    color: #DBDBDB;
+    font-size: 15px;
+}
+.footerText1{
+    font-size: 18px;
+    color: #3D3D3D;
+}
+.footerText2{
+    font-size: 14px;
+    color: #ff0623;
+}
+
+/*ご利用案内*/
+.kane{
+    width: 100%;
+    height: 600px;
+    flex-shrink: 0;
+    background: #E8F6FA;
+    text-align: center;
+}
+.kane h1{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+    padding-top: 60px;
+}
+.kane h2{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 7.36px;
+    margin: 40px;
+}
+.kane p{
+    color: #000;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 50px;
+}
+.kaneFlex{
+    display: flex;
+    justify-content: center;
+}
+.kaneFlex h3{
+    color: #000;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 7.36px;
+    margin: 0;
+}
+.kaneFlex p{
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px;
+}
+.ippan{
+    width: 320px;
+    height: 112px;
+}
+.ippan p{
+    color: #000;
+}
+.dantai{
+    width: 320px;
+    height: 112px;
+}
+.dantai p{
+    color: #F00;
+}
+.jikanAndAkusesu{
+    width: 100%;
+    height: 950px;
+    background-image: url(../img/trta9000.png);
+    background-repeat: repeat;
+    padding-top: 60px;
+}
+.jikan{
+    display: flex;
+    justify-content: center;
+}
+.jikan img{
+    width: 590px;
+    height: 400px;
+    flex-shrink: 0;
+}
+.jikanText{
+    height: 400px;
+    text-align: center;
+    align-content: center;
+    margin-left: 67px;
+}
+.caption{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 12px;
+}
+.jikanText h2{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 7.36px;
+    margin: 0;
+}
+.jikanText p{
+    color: #000;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 25px 0 0;
+}
+.jikanText p span{
+    color: #F00;
+}
+.openJikan{
+    margin: 0 0 60px;
+}
+.akusesu{
+    display: flex;
+    justify-content: center;
+    margin-top: 39px;
+}
+.akusesuMapImg{
+    width: 590px;
+    height: 348px;
+    flex-shrink: 0;
+}
+.akusesuText{
+    height: 348px;
+    align-content: center;
+    margin-left: 18px;
+}
+.akusesuText h2{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 7.36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.akusesuTextCon{
+    display: flex;
+}
+.akusesuText1{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.akusesuText2{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.staT17{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    margin: 30px 20px 0 0;
+}
+.akusesuText3{
+    color: #000;
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+}
+.akusesuText3 span{
+    color: #000;
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+}
+.googleMap{
+    height: 600px;
+}
+
+/*館内案内*/
+.facilities_Bg{
+    width: 100%;
+    height: 460px;
+    background: url(../img/facilities_Bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.facilities_Bg p{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 12px;
+    padding: 180px 0;
+    margin: 0;
+}
+.mapImgArea{
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+}
+.mapImg{
+    height: 670px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 115px 0;
+}
+.sisetuBox{
+    width: 1200px;
+    margin: 0 auto 60px;
+}
+.sisetu{
+    width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+}
+.sisetu img{
+    height: 78px;
+    margin-left: 44px;
+}
+.sisetuDark{
+    width: 16px;
+    height: 78px;
+    flex-shrink: 0;
+    background: #1B457A;
+    margin-left: 21px;
+}
+.sisetuLight{
+    width: 543px;
+    height: 78px;
+    flex-shrink: 0;
+    background: #E8F6FA;
+}
+.sisetuLight p{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 16px 21px;
+}
+.sisetuBoxText{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 50px 44px;
+}
+.sisetuBoxImg{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.sisetuBoxImgLeft{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 44px;
+}
+.sisetuBoxOther{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 32px;
+}
+.sisetu7TitleSP{
+    display: none;
+}
+.sisetu7Title{
+    color: #1B457A;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.sisetuBoxOtherText{
+    margin: 25px 0 15px 27px;
+    width: 600px;
+}
+.sisetu7Text{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 30px;
+}
+.simulator{
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0 0 10px;
+}
+.sisetuBoxOther2{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0 148px;
+    gap: 32px;
+}
+
+/*よくある質問*/
+.faqMv{
+    width: 100%;
+    height: 1400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url(../img/Rectangle16.jpg);
+}
+.faqMv h1{
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 110px 0 40px;
+    text-align: center;
+    margin: 0;
+}
+.faqText{
+    width: 1024px;
+    margin: 0 auto 32px;
+}
+.faqText h3{
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 200%;
+    margin: 0;
+}
+.faqText p{
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    margin: 0;
+}
+.faqText span{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1023px){
+    header{
+        height: 270px;
+        display: block;
+        text-align: center;
+        position: sticky;
+        margin-top: 40px;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: 50px auto;
+        line-height: 10px;
+    }
+    header nav a{
+        font-size: 43px;
+    }
+    .topMain{
+        height: 670px;
+    }
+    #mvDom{
+        height: 670px;
+    }
+    footer{
+        height: 540px;
+    }
+    .snsLink{
+        display: none;
+    }
+    .snsLinkSp{
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+    }
+    .snsLinkSp a img{
+        margin: 6px 0 24px;
+    }
+    .footerText img{
+        margin-top: 40px;
+    }
+    .footerText p{
+        font-optical-sizing: none;
+        text-align: center;
+    }
+    .subway4S{
+        font-size: 15px;
+    }
+    .footerText1{
+        font-size: 22px;
+    }
+    .footerText2{
+        font-size: 18px;
+    }
+    .jikanAndAkusesu{
+        height: 1800px;
+        background-image: url(../img/trta9000.png);
+        background-repeat: repeat;
+        padding-top: 0px;
+        text-align: center;
+        align-content: space-around;
+    }
+    .jikan{
+        display: block;
+    }
+    .jikanText{
+        margin-left: 0px;
+    }
+    .akusesu{
+        flex-direction: column-reverse;
+    }
+    .akusesuText{
+        margin: 0 auto;
+    }
+    .akusesuTextCon{
+        margin-bottom: 54px;
+    }
+    .akusesuText2{
+        text-align: start;
+    }
+    .akusesuMapImg{
+        margin-top: 25px;
+    }
+    .googleMap{
+        height: 430px;
+    }
+    .googleMap iframe{
+        height: 430px;
+    }
+    .mapImgArea{
+        width: 100%;
+        height: 690px;
+        text-align: center;
+    }
+    .mapImg{
+        height: 430px;
+    }
+    .sisetu{
+        width: 100%;
+    }
+    .sisetuBox{
+        width: 100%;
+    }
+    .sisetuBoxText{
+        font-size: 28px;
+        max-width: 540px;
+        margin-left: 94px;
+    }
+    .sisetuBoxImg{
+        display: block;
+        text-align: center;
+    }
+    .sisetuBoxImgLeft{
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .sisetuBoxOther{
+        display: block;
+        margin-top: 60px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sisetu7Title{
+        display: none;
+    }
+    .sisetu7TitleSP{
+        display: block;
+        color: #1B457A;
+        font-family: Inter, sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+    }
+    .sisetuBoxOtherText{
+        width: 520px;
+        margin: 40px auto;
+    }
+    .sisetu7Text{
+        text-align: start;
+    }
+    .simulatorImg{
+        width: 740px;
+    }
+    .simulator{
+        margin-left: 14px;
+        text-align: start;
+    }
+    .sisetuBoxOther2{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sisetuBoxOther2Text{
+        width: 530px;
+        margin: 50px auto;
+    }
+    .faqMv{
+        height: 1750px;
+    }
+    .faqText{
+        width: 702px;
+    }
+}
